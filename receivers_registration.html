@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<title>Receivers Registration</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="registration.css">
+
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--<title>Responsive Regisration Form </title>-->
+</head>
+
+<body>
+    <div class="container">
+        <header>Receivers Registration</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" id="fullname" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" id="dob" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" id="mobno" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select id="gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Any previous health issue</label>
+                            <input type="text" id="prevhealthissue" placeholder="Enter issue or NA" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input type="text" id="idtype" placeholder="Enter ID type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" id="idnumber" placeholder="Enter ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Authority</label>
+                            <input type="text" id="authority" placeholder="Enter issued authority" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued State or Country</label>
+                            <input type="text" id="stateorcountry" placeholder="Enter issued state/country" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Date</label>
+                            <input type="date" id="issuedate" placeholder="Enter your issued date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" id="expirydate" placeholder="Enter expiry date" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn" id="nextbtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address</label>
+                            <input type="text" id="address" placeholder="Enter Address" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" id="nationality" placeholder="Enter nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Pincode</label>
+                            <input type="text" id="pincode" placeholder="Enter code" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Family members name</label>
+                            <input type="text" id="fammembers" placeholder="Enter family members name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>relation</label>
+                            <input type="text" id="relation" placeholder="Enter relation" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Phone number</label>
+                            <input type="text" id="famphone" placeholder="Enter phone number" required>
+                        </div>
+                    </div>
+                
+                    <span class="title">Donation Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Blood type</label>
+                            <input type="text" id="bloodtype" placeholder="Enter blood type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Current Hemoglobin Levels</label>
+                            <select id="haemoglobin" required>
+                                <option disabled selected>Hemoglobin Levels</option>
+                                <option>lesser</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>higher</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Nearest Blood Bank</label>
+                            <input type="text" id="nrstbloodbank" placeholder="Enter blood bank" required>
+                        </div>
+                        <div class="T&C">
+                            <input type="checkbox" id="T&C" name="T&C" value="T&C">
+                            <label for="T&C"> By checking this you are agreeing to all the <a href="">Terms and Conditions
+                                    of Lifestream</a></label><br>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+
+                        <button class="sumbit" id="submitb">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+<script src="script.js"></script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.15.0/firebase.js"></script>
+    
+<script type="text/javascript">
+    (function() {
+        var firebaseConfig = {
+            apiKey: "AIzaSyBMn89oy9tzE5p2d2rmJdeD5ALOJtP9mbU",
+            authDomain: "treasure-hacks-lifestream.firebaseapp.com",
+            databaseURL: "https://treasure-hacks-lifestream-default-rtdb.firebaseio.com",
+            projectId: "treasure-hacks-lifestream",
+            storageBucket: "treasure-hacks-lifestream.appspot.com",
+            messagingSenderId: "832270594400",
+            appId: "1:832270594400:web:eeee866ac192055a4fee05"
+        };
+    
+        firebase.initializeApp(firebaseConfig);
+    
+        var push_to_firebase = function(data){
+        // alert("Thanks for sending a message. I'll try and get back to you as soon as possible.")
+            var db = firebase.firestore();
+        
+            db.collection("Receivers_Registration_Details").add({
+                full_name: data["fullname"],
+                date_of_birth : data["dateofbirth"],
+                email: data["email"],
+                mobile_number : data["mobile_number"],
+                gender : data["gender"],
+                any_previous_health_issue : data["previous_health_issue"],
+                id_type : data["idtype"],
+                id_number : data["idnumber"],
+                issued_authority : data["authority"],
+                issued_state_or_country : data["stateorcountry"],
+                issued_date : data["issue_date"],
+                expiry_date: data["expiry_date"],
+                address : data["address"],
+                nationality : data["nationality"],
+                pincode : data["Pincode"],
+                family_members_name : data["family_members"],
+                relation : data["relation"],
+                phone_number : data["family_member_phone"],
+                blood_type : data["bloodtype"],
+                current_haemoglobin_levels : data["current_haemoglobin_levels"],
+                nearest_blood_bank : data["nearest_blood_bank"],
+                timestamp: Date.now()
+            })
+            .then(function(docRef) {
+                console.log("Message sent, ID: ", docRef.id);
+                alert("Dear user your form has been submitted");
+            })
+            .catch(function(error) {
+                console.error("Message could not be sent: ", error);
+            });
+        }
+    
+        var registration_submit = function() {
+            var fullname = document.getElementById("fullname");
+            var dob = document.getElementById("dob");
+            var email = document.getElementById("email");
+            var mobile_number = document.getElementById("mobno");
+            var gender = document.getElementById("gender");
+            var health_issue = document.getElementById("prevhealthissue");
+            var idtype = document.getElementById("idtype");
+            var idnumber = document.getElementById("idnumber");
+            var authority = document.getElementById("authority");
+            var stateorcountry = document.getElementById("stateorcountry");
+            var issue_date = document.getElementById("issuedate");
+            var expiry_date = document.getElementById("expirydate");
+            var address = document.getElementById("address");
+            var nationality = document.getElementById("nationality");
+            var pincode = document.getElementById("pincode");
+            var family_members = document.getElementById("fammebers");
+            var relation = document.getElementById("relation");
+            var fam_memb_phone = document.getElementById("famphone");
+            var blood_type = document.getElementById("bloodtype");
+            var haemoglobin = document.getElementById("haemoglobin");
+            var nrst_blood_bank = document.getElementById("nrstbloodbank");
+        
+            var data = {
+                "fullname": fullname.value,
+                "dateofbirth": dob.value,
+                "email": email.value,
+                "mobile_number": mobile_number.value,
+                "gender": gender.value,
+                "previous_health_issue": health_issue.value,
+                "idtype": idtype.value,
+                "idnumber": idnumber.value,
+                "authority": authority.value,
+                "stateorcountry": stateorcountry.value,
+                "issue_date": issue_date.value,
+                "expiry_date": expiry_date.value,
+                "address": address.value,
+                "nationality": nationality.value,
+                "Pincode": pincode.value,
+                "family_members": family_members.value,
+                "relation": relation.value,
+                "family_member_phone": fam_memb_phone.value,
+                "bloodtype": blood_type.value,
+                "current_haemoglobin_levels": haemoglobin.value,
+                "nearest_blood_bank": nrst_blood_bank.value,
+            }
+            push_to_firebase(data);
+        }
+    
+        document.getElementById("submitb").addEventListener("click", registration_submit);
+    })();
+</script>
+</body>
+
+</html>
