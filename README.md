@@ -2,7 +2,7 @@
 Blood Donation Website for Treasure Hacks 3.0 hackathon.
 
 # Website Link :
-https://lifestream-blood-donation-website.bhushanpakhle.repl.co/
+https://red-rock-0b22e7d10.3.azurestaticapps.net/
 
 <h5>Home Page</h5>
 
